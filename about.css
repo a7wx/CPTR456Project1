@@ -1,0 +1,103 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+main {
+    background-color: #e6e6e6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &::before {
+        content: "";
+        background-image: url("truckbackground2.jpg");
+        background-size: cover;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: 80%;
+    }
+}
+
+/* #map{
+    width: max-content;
+} */
+
+section{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 50 px;
+    margin-top: 50 px;
+    align-items: center;
+    justify-content: center;
+    gap: 100px
+}
+div{
+    display: flex;
+    flex-direction: column;
+    /* margin-right: auto; */
+    /* max-height: 80%;
+    max-width: 60%; */
+    width: fit-content;
+}
+div img{
+    /* max-height: 80%; */
+    max-width: 100%;
+    min-width: 60%;
+    /* margin: 100px; */
+    /* margin-left: 0px; */
+    margin: auto;
+    border-radius: 25px;
+}
+
+div h2, div p{
+    font-family: Arial, Helvetica, sans-serif;  
+    max-width: 100%;
+}
+
+#blurb{
+    width: 50%;
+    background-color: white;
+    border-radius: 25px;
+    padding: 15px;
+}
+
+
+@media (max-width: 720px){
+    section{
+        flex-direction: column;
+    }
+    img{
+        visibility: hidden;
+        visibility: collapse; 
+        height: 0px
+    }
+    div{
+        margin: 0;
+        width: 100%;
+    }
+    main{
+        background: #FFFFFF;
+        overflow:auto;
+        &::before {
+            content: "";
+            background-image: none;
+            background-size: cover;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            opacity: 60%;
+        }
+    }
+    #blurb{
+        width: 90%;
+        border-radius: 0px;
+        padding: 30px;
+        
+    }
+}
