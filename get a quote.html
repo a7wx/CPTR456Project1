@@ -4,8 +4,7 @@
     <meta charset = "UTF-8">
     <meta name = viewport content = "width=device-width, initial-scale = 1.0">
     <title>Get A Quote</title>
-    <link rel = "stylesheet" href = "get a quote.css">
-    <script src = "get a quote.js"></script>
+    <link rel = "stylesheet" href = "get_a_quote.css">
 </head>
 <body>
     <header>
@@ -42,14 +41,76 @@
 
         <div id = "calc_and_order_area">
             <div id = "calc_area">
-                <div id = "ent_and_int_panel">
+                <div id = "ent_and_ind_panel">
                     <button class = "ent_button"> Enterprise</button>
-                    <button class = "int_button"> Individual</button>
+                    <button class = "ind_button"> Individual</button>
+                </div>
+                <div id = "all_trucks_box">
+                    <div class = "individual_trucks_box">
+                        <button class = "truck_buttons" id = "12_truck">12' Truck</button>
+                        <label class = "truck_button_label" for = "12_truck"> 
+                            BASE FEE: $60 <br>
+                            $0.60 / mile
+                        </label>
+                    </div>
+
+                    <div class = "individual_trucks_box">
+                        <button class = "truck_buttons" id = "18_truck">16' Truck</button>
+                        <label class = "truck_button_label" for = "16_truck">
+                            BASE FEE: $65 <br>
+                            $0.80 / mile
+                        </label>
+                    </div>
+
+                    <div class = "individual_trucks_box">
+                        <button class = "truck_buttons" id = "24_truck">24' Truck</button>
+                        <label class = "truck_label" for = "24_truck">
+                            BASE FEE: $90 <br>
+                            $0.90 / mile
+                        </label>
+                    </div>
                 </div>
                 
+                <div id = "miles_add_cost_area">
+                    <button id = "add_truck_order_button" onclick = "add_truck()"> Add truck <br> order to list </button>
+                    <label for = "miles_field">Miles:</label>
+                    <input id = "miles_field" type = "number">
+                </div>
+
+                <div id = "workers_hours_fields">
+                    <div>
+                        <label for = "workers_field">Workers:</label>
+                        <input id = "workers_field" type = "number">
+                    </div>
+                    <div>
+                        <label for = "hours_field">Hours:</label>
+                        <input id = "hours_field" type = "number">
+                    </div>
+                </div>
+
+                <div id = "add_worker_area">
+                    <button id = "add_workers_order_button" onclick = "add_worker()"> Add workers <br> order to list </button>
+                </div>
+
+                <div id = "cost_area">
+                    <p> TRUCKS COST: </p>
+                    <p> WORKERS COST: </p>
+                    <p id = "total_cost"> TOTAL COST:</p>
+                </div>
             </div>
-            <div id = "order_area">
-                ORDER LIST
+
+            <div id = "list_area">
+                <div id = "list_title">
+                    ORDER LIST
+                </div>
+                <div id = "list">
+                    <div id = "item_template" class = "list_item" visibility = "hidden">
+                        <div class= "card-body">
+                            Bananas
+                        </div>
+                        <button class = "remove_button">🗑️</button>
+                    </div>
+                <div>
             </div>
 
         </div>
@@ -69,5 +130,7 @@
             </li>
         </ul>
     </footer>
+
+    <script src = "get_a_quote.js"></script>
 </body>
 </html>k
