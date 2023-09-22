@@ -1,0 +1,114 @@
+/* Global Reset*/
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* main content */
+html {
+    background-color: #e6e6e6; 
+}
+
+#main_image {
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    height: 600px;
+    width: 100%;
+    
+}
+
+#index_truck {
+    object-fit: none;
+    width: 100%;
+    zoom: 75%;
+    filter: drop-shadow(0px 100px 40px rgb(214, 214, 214))
+
+}
+
+#picture_text {
+    position: absolute;
+    display: flex; 
+    flex-direction: column;
+    text-align: right;
+    justify-content: right;  
+    align-items: right;
+    margin-left: 1vw;
+    flex-wrap: wrap;   
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 40px;
+}
+
+#motto {
+    font-style: italic;
+    font-size: 35px;
+}
+
+#name {
+    font-size: 45px;
+    top: 10%;
+    text-align: right;
+
+}
+
+#body {
+    height: 500px;  
+}
+
+#infoboxes {
+    width: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+.infobox {
+    background-color: white;
+    width: 250px;
+    height: 350px;
+    gap: 50px;
+    position: relative;
+    top: -100px;
+    border-radius: 25px;
+    filter: drop-shadow(0px 100px 40px rgb(214, 214, 214));
+    text-align: center;
+    line-height: 125px;
+    font-size: 50px;
+}
+
+.infobox div{
+    font-size: 30px;
+    line-height: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: bold;
+}
+
+.infobox div div {
+    font-size: 18px;
+    margin: 10px;
+    line-height: 23px;
+
+}
+
+#body p {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4.5vw;
+
+}
+
+@media screen and (max-width: 730px) {
+    #infoboxes{
+        flex-direction: column;
+
+        gap: 20px;
+        flex-direction: center;
+
+        align-items: center;
+
+    }
+}

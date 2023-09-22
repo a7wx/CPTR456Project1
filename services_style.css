@@ -1,0 +1,177 @@
+:root {
+    --edge_round_val: 25px;
+    --shadow: 0px 100 px 40px rgb(214, 214, 214);
+    --font_family: Arial, Helvetica, sans-serif;
+    --padding: 10px;
+    --dark_orange: #ba745f;
+    --off_white: #e6e6e6;
+    --light_orange: #d8b2a7;
+}
+
+/* Global Reset*/
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* main content */
+html {
+    background-color: var(--off_white);
+}
+
+body, main {
+    height: 2200px;
+}
+
+
+#general {
+    display: flex;
+    justify-content: left;
+    gap: 3%;
+}
+
+#truck_house {
+
+    position: relative;
+    height: 750px;
+    width: 50%;
+    object-fit: none;
+    border-bottom-right-radius: var(--edge_round_val);
+    filter: drop-shadow(var(--shadow));
+
+}
+
+.package {
+    text-align: left;
+    margin: 1px;
+    font-family: var(--font_family);
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.package + p {
+    color: var(--dark_orange);
+    font-size: 40px;
+}
+
+
+#general div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: var(--padding);
+}
+
+.info_box {
+    background-color: white;
+    display: flex;
+    flex-direction: column; 
+    filter: drop-shadow(var(--shadow));
+    text-align: left;
+    border-radius: var(--edge_round_val);
+    width: 40vw;
+    height: 10vw;
+}
+
+.truck_type {
+    font-family: var(--font_family);
+    font-size: 2.5vw;
+    margin-left: var(--padding);
+}
+
+.base_fee {
+    font-family: var(--font_family);
+    font-size: 2vw;
+    margin-left: var(--padding);
+    margin-top: var(--padding)-10;
+}
+
+.per_mile_price {
+    font-family: var(--font_family);
+    color: var(--light_orange);
+}
+
+
+#manpower {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    line-height: 0px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    
+    font-family: var(--font_family);   
+}
+
+#manpower :nth-child(1) {
+    font-size: 5vw;
+}
+
+
+#manpower :nth-child(2) {
+    font-size: 4vw;
+    color: var(--dark_orange);
+    margin: 15px;
+}
+
+#manpower :nth-child(3) {
+    font-size: 2vw;
+    margin-top: 30px;
+    color: var(--light_orange);
+}
+
+/* ENTERPRISE CSS */
+
+#enterprise {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    gap: 3%;
+}
+
+#truck_moving { 
+    border-radius: 20px;
+    position: relative;
+    height: 750px;
+    width: 50%;
+    object-fit: none;
+    justify-content: right;
+    top: 153.5px; 
+    filter: drop-shadow(var(--shadow));
+}
+
+#ent_package {
+    color: var(--light_orange);
+    font-size: 1.5vw;
+}
+
+#enterprise div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: var(--padding);
+}
+
+@media screen and (max-width: 730px) {
+    #general, #enterprise {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+    .info_box {
+        width: 80vw;
+        height: 15vw;
+    }
+    #truck_house, #truck_moving {
+        width: 100vw;
+        height: 50%;
+        border-bottom-right-radius: 0px;
+    }
+    .truck_type{
+        font-size: 20px;
+    }
+    .base_fee{
+        font-size: 15px;
+    }
+}
