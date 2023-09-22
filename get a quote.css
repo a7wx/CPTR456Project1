@@ -1,0 +1,351 @@
+/*Global Reset*/
+html, body{
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: #E6E6E6;
+}
+
+/*THE FOLLOWING CSS SECTIONS CONCERNS THE NAVIGATION BAR*/
+header {
+    background-color:  #031329;
+    height: 100px;
+}
+/* Navigation bar div stylying*/
+div.navigation_bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+    background: #031329;
+    padding: 0px;
+    margin: 0px;
+}
+
+/*this section is for determining the border styling 
+for the navigation items among other things*/
+nav ul {
+    margin: 0px;
+    display: flex;
+    list-style: none;
+    height: 100%;
+    padding: 0px;
+    border-width: 1px;
+    border-style: solid;
+    border-left-color: #BA745F;
+    border-right-color: #BA745F;
+    border-bottom-color: #BA745F;
+}
+
+/*navigation items not including the last navigation item
+this is to ensure that all the borders are the right size*/
+nav ul li.not_last_nav_item {
+    border-width: 1px;
+    border-style: solid;
+    border-right-color: #BA745F;
+    padding: 0px;
+    margin: 0px;
+}
+
+/*the height of all list items must fit the container
+NOTE THAT THIS MIGHT NEED TO CHANGE*/
+li {
+    height: 100%;
+}
+
+/*this section is purely for the navigation items themselves 
+among other things*/
+nav ul li a {
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+    display: block;
+    height: 100%;
+    padding: 10px;
+    transition: ease-in 0.2s;
+}
+
+/*this section covers what happens when the user hovers over the
+navigation items*/
+nav ul li a:hover {
+    color: #031329;
+    background: #BA745F;
+}
+
+/*THE FOLLOWING CSS SECTIONS CONCERNS THE BODY SECTION*/
+main {
+    /*making sure the items within main are centered*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 50px;
+    margin-bottom: 90px;
+    height: 550px;
+    background-color: white;
+
+}
+
+#get_a_quote_area {
+    /*centering using flex box*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /*dimensions*/
+    height:500px;
+    width: 350px;
+}
+
+/*the following is text styling in main*/
+h1 {
+    font-size: 40px;
+    margin-bottom: 0px;
+    padding: 0px;
+}
+
+#get_a {
+    font-weight: 100;
+    margin: 0px;
+    padding: 0px;
+}
+
+#quote {
+    font-weight: bolder;
+    color:#BA745F;
+}
+
+/*this specific part is first paragraph after "GET A QUOTE*, 
+which is "Fill out the form to view our affordable rates*/
+h1 + p {
+    /*font stuff*/
+    font-weight: bold;
+    font-size: 21px;
+
+    /*color*/
+    color: #D8B2A7;
+
+    /*sizing*/
+    width:280px;
+
+    /*margin & padding*/
+    margin: 0px;
+    padding: 0px;
+}
+
+#premium_rate_question {
+    /*margin to put it lower and to the left*/
+    margin-top: 50px;
+    margin-right: 115px;
+
+    /*font*/
+    font-weight: bold;
+}
+
+#premium {
+    /*color*/
+    color: #BA745F;
+}
+
+#contact_us_button {
+    /*pushes button to the left*/
+    margin-right: 132px;
+
+    /*coloring*/
+    background-color: #D8B2A7;
+    color: white;
+
+    /*sizing*/
+    height: 45px;
+    width: 150px;
+
+    /*border changes*/
+    border: none;
+    border-radius: 10px;
+
+    /*font size*/
+    font-size: 20px;
+
+    /*hover color transition*/
+    transition: ease-in 0.2s;
+}
+
+#contact_us_button:hover{
+    background-color: #BA745F;
+}
+
+/*the following will be on the calculation and order list area*/
+#order_area{
+    /*colors*/
+    background-color: #E6E6E6;
+
+    /*dimensions*/
+    height: 500px;
+    width: 350px;
+
+    /*margins and padding*/
+    margin: 0px;
+    padding: 0px;
+
+    /*corner must be rounded on top right and bottom left*/
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+#calc_area {
+    /*dimensions*/
+    width: 550px;
+    height: 500px;
+
+    /*border*/
+    border-style: solid;
+    border-color: white;
+
+    /*corner must be rounded on top right and bottom left*/
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+
+    /*margins and padding*/
+    margin: 0px;
+    padding: 0px;
+}
+
+#calc_and_order_area {
+    /*flex specifications and centering*/
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: center;
+
+    /*dimensions*/
+    height: 500px;
+    width: 800px;
+
+    /*color*/
+    color: white;
+    background-color: #031329;
+
+    /*rounding borders:*/
+    border-radius: 40px;
+    /* the purpose of rounding the top left border disproportionately large
+    is because the enterprise button had some visual distortions that made the background
+    visible when hovering */
+    border-top-left-radius: 60px;
+
+    /*margin, padding, */
+    margin-right:20px;
+    padding: 0px;
+}
+
+#calc_and_order_area p {
+    margin: 0px;
+    padding: 0px;
+}
+
+/*Enterprise or Individual buttons panel*/
+#ent_and_int_panel {
+    display: flex;
+}
+
+.ent_button {
+    /*font*/
+    font-size: 15px;
+    font-weight: bold;
+
+    /*color*/
+    color: white;
+    background-color: #031329;
+
+    /*dimensions*/
+    width: 130px;
+    height: 60px;
+    padding: 5px;
+
+    /*border*/
+    /* border-color: #D8B2A7; */
+    border:none;
+    border-top-left-radius: 40px;
+
+    /*hover color transition*/
+    transition: ease-in 0.2s;
+
+    /*margin for ensuring that enterprise button covers background for container*/
+    margin-top: -100;
+    margin-left: -100;
+}
+
+.ent_button:hover {
+    /*color*/
+    color: white;
+    background-color: #D8B2A7;
+}
+
+.int_button {
+    /*font*/
+    font-size: 15px;
+    font-weight: bold;
+
+    /*color*/
+    color: white;
+    background-color: #031329;
+
+    /*dimensions*/
+    width: 130px;
+    height: 60px;
+    padding: 5px;
+
+    /*border*/
+    /* border-color: #D8B2A7; */
+    border:none;
+
+    /*hover color transition*/
+    transition: ease-in 0.2s;
+}
+
+.int_button:hover {
+    /*color*/
+    color: white;
+    background-color: #D8B2A7;
+}
+
+/*THE FOLLOWING CSS SECTIONS CONCERNS THE FOOTER SECTIONS*/
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  #031329;
+    height: 40px;
+}
+
+footer ul {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    height: 100%;
+    width: 100%;
+    border-width: 1px;
+    border-style: solid;
+    border-left-color: #BA745F;
+    border-right-color: #BA745F;
+    border-bottom-color: #BA745F;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    height: 100%;
+    padding:0px 100px 0px 100px;
+    transition: ease-in 0.2s;
+}
+
+footer ul li a:hover {
+    color: #031329;
+    background: #BA745F;
+}
