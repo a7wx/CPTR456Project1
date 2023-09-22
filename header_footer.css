@@ -2,6 +2,13 @@
 html, body {
     margin: 0;
     padding: 0;
+    
+}
+main {
+    position: absolute;
+    top: 80px;
+    bottom: 80px;
+    width: 100%;
 }
 
 nav {
@@ -9,6 +16,8 @@ nav {
     background-color: #031329;
     justify-content: center;
     flex-basis: content;
+    max-height: 80px;
+    min-height: 80px;
 }
 
 body{
@@ -32,6 +41,8 @@ nav ul, footer ul{
     background: #BA745F;
     list-style: none;
     padding: 0%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 nav ul li{
@@ -53,4 +64,11 @@ nav ul li a , footer ul li{
     color: white;
     text-decoration: none;
     font-size: large;
+}
+
+@media (max-width: 720px){
+    nav ul li{
+        align-items: center;
+        padding: 5px;
+    }
 }
