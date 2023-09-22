@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang = "en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset = "UTF-8">
+    <meta name = viewport content = "width=device-width, initial-scale = 1.0">
+    <title>Get A Quote</title>
+    <link rel = "stylesheet" href="header_footer.css">
+    <link rel = "stylesheet" href = "quote.css">
+    <script src = "get a quote.js"></script>
 </head>
 <body>
     <header>
@@ -19,7 +22,7 @@
                     <a href="contact.html">Contact Us</a>
                 </li>
                 <li>
-                    <a href="quote.html">Get A Quote</a>
+                    <a href="get a quote.html">Get A Quote</a>
                 </li>
                 <li>
                     <a href="services.html">Services</a>
@@ -27,14 +30,36 @@
             </ul>
         </nav>
     </header>
-<main>
-</main>
-<footer>
-    <ul>
-        <li>Terms Of Use</li>
-        <li>Privacy Policy</li>
-        <li>Copyright</li>
-    </ul>
-</footer>
+
+    <main>
+        <div id = "get_a_quote_area">
+            <h1><span id = "get_a">GET A </span> <span id = "quote">QUOTE</span></h1>
+            <p>Fill out the form to view our affordable rates!</p>
+            <p id = "premium_rate_question">want a <span id = "premium">premium</span> rate?</p>
+            <button id = "contact_us_button">CONTACT US</button>
+        </div>
+
+        <div id = "calc_and_order_area">
+            <div id = "calc_area">
+                <div id = "ent_and_int_panel">
+                    <button class = "ent_button"> Enterprise</button>
+                    <button class = "int_button"> Individual</button>
+                </div>
+                
+            </div>
+            <div id = "order_area">
+                ORDER LIST
+            </div>
+
+        </div>
+
+    </main>
+    <footer>
+        <ul>
+            <li>Terms Of Use</li>
+            <li>Privacy Policy</li>
+            <li>Copyright</li>
+        </ul>
+    </footer>
 </body>
 </html>
